@@ -7,7 +7,7 @@ This project aims to predict the risk of diabetes based on various health indica
 To run the code locally, follow these steps:
 
 1. Clone the repository to your local machine:
-git clone https://github.com/ezrarichard/diabetes-risk-prediction.git
+git clone [https://github.com/ezrarichard/diabetes-risk-prediction.git](https://github.com/ezrarichard/Diabetes-Prediction-ML.git)
 
 
 2. Install the required dependencies:
