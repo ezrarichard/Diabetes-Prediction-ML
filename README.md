@@ -1,3 +1,6 @@
+![EzraRichard_Banner (2)](https://github.com/ezrarichard/Diabetes-Prediction-ML/assets/125721936/810cd457-f0d4-4983-8526-acbdbff3a6ba)
+
+
 # Diabetes Risk Prediction Project
 
 ## Introduction
