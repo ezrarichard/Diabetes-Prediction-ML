@@ -4,6 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
+import joblib
 
 # Loading the dataset
 data = pd.read_csv('dia_risk_prediction_dataset.csv')
@@ -33,6 +34,9 @@ xtrain, xtest, ytrain, ytest = train_test_split(X_scaled, y, test_size=0.3)
 # Initializing and training the RandomForestClassifier model
 model = RandomForestClassifier()
 model.fit(xtrain, ytrain.values.ravel())
+
+# Save the model to a file
+joblib.dump(model, 'dia_risk_prediction_model.pkl')
 
 # Making predictions on the test set
 predict_output = model.predict(xtest)
