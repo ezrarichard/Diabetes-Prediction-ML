@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Prediction Form</title>
+</head>
+<body>
+    <h2>Disease Risk Prediction Form</h2>
+    <form id="predictionForm">
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <label for="polyuria">Polyuria:</label>
+            <select id="polyuria" name="polyuria" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="polydipsia">Polydipsia:</label>
+            <select id="polydipsia" name="polydipsia" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="suddenWeightLoss">Sudden Weight Loss:</label>
+            <select id="suddenWeightLoss" name="suddenWeightLoss" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="weakness">Weakness:</label>
+            <select id="weakness" name="weakness" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="polyphagia">Polyphagia:</label>
+            <select id="polyphagia" name="polyphagia" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="genitalThrush">Genital Thrush:</label>
+            <select id="genitalThrush" name="genitalThrush" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="visualBlurring">Visual Blurring:</label>
+            <select id="visualBlurring" name="visualBlurring" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="itching">Itching:</label>
+            <select id="itching" name="itching" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="irritability">Irritability:</label>
+            <select id="irritability" name="irritability" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="delayedHealing">Delayed Healing:</label>
+            <select id="delayedHealing" name="delayedHealing" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="partialParesis">Partial Paresis:</label>
+            <select id="partialParesis" name="partialParesis" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="muscleStiffness">Muscle Stiffness:</label>
+            <select id="muscleStiffness" name="muscleStiffness" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="alopecia">Alopecia:</label>
+            <select id="alopecia" name="alopecia" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="obesity">Obesity:</label>
+            <select id="obesity" name="obesity" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="button" onclick="submitFormData()">Check</button>
+        </div>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function submitFormData() {
+            var formData = new FormData(document.getElementById('predictionForm'));
+            // Example: Log formData or send it to a server
+            console.log("Form Data Submitted");
+            // Here, you would typically send the formData to your server via fetch() or XMLHttpRequest
+            // For demonstration, just displaying a placeholder result
+            document.getElementById('result').innerHTML = 'Submitting form... (implement server call to get actual results)';
+        }
+    </script>
+</body>
+</html>
