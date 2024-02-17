@@ -23,7 +23,7 @@ jobs:
         pip install pandas scikit-learn joblib
 
     - name: Run the model training script
-      run: diabetes_prediction.py
+      run: python diabetes_prediction.py
 
     - name: Commit and push the trained model
       run: |
